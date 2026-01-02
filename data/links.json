@@ -1,0 +1,58 @@
+{
+  "site": {
+    "title": "Praktis Gudang LinkHub",
+    "subtitle": "Satu pintu untuk semua spreadsheet operasional gudang.",
+    "brand": "Praktis",
+    "repo": ""
+  },
+  "updated_at": "2026-01-02T06:22:53.736835+00:00",
+  "categories": [
+    {
+      "id": "qc",
+      "name": "Quality Control",
+      "emoji": "🔎",
+      "links": [
+        {
+          "id": "qc_harian",
+          "title": "Rekap QC Harian",
+          "url": "https://docs.google.com/spreadsheets/d/XXXXXXXXXXXX",
+          "desc": "Rekap pekerjaan QC per hari.",
+          "tag": "Wajib",
+          "icon": "qc",
+          "pinned": true,
+          "updated_at": "2026-01-02T06:22:53.736853+00:00"
+        }
+      ]
+    },
+    {
+      "id": "inbound",
+      "name": "Inbound",
+      "emoji": "⬇️",
+      "links": []
+    },
+    {
+      "id": "outbound",
+      "name": "Outbound",
+      "emoji": "⬆️",
+      "links": []
+    },
+    {
+      "id": "packing",
+      "name": "Packing",
+      "emoji": "📦",
+      "links": []
+    },
+    {
+      "id": "retur",
+      "name": "Retur",
+      "emoji": "↩️",
+      "links": []
+    },
+    {
+      "id": "sla",
+      "name": "SLA / Vendor",
+      "emoji": "📈",
+      "links": []
+    }
+  ]
+}
