@@ -1,0 +1,43 @@
+{
+  "site": {
+    "title": "Gudang LinkHub",
+    "subtitle": "Pusat akses spreadsheet gudang — cepat, rapi, dan mudah dicari.",
+    "brand": "Praktis",
+    "repo": ""
+  },
+  "updated_at": "2026-01-02T06:09:48.445617+00:00",
+  "categories": [
+    {
+      "id": "operasional",
+      "name": "Operasional",
+      "emoji": "📦",
+      "color": "indigo",
+      "links": [
+        {
+          "id": "lnk_qc",
+          "title": "Rekap QC Harian",
+          "url": "https://docs.google.com/spreadsheets/d/XXXXXXXXXXXX",
+          "desc": "Rekap pekerjaan QC per hari.",
+          "tag": "Wajib",
+          "icon": "qc",
+          "pinned": true,
+          "updated_at": "2026-01-02T06:09:48.445641+00:00"
+        }
+      ]
+    },
+    {
+      "id": "inbound",
+      "name": "Inbound",
+      "emoji": "⬇️",
+      "color": "emerald",
+      "links": []
+    },
+    {
+      "id": "outbound",
+      "name": "Outbound",
+      "emoji": "⬆️",
+      "color": "sky",
+      "links": []
+    }
+  ]
+}
