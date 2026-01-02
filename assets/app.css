@@ -168,10 +168,21 @@ input:focus, select:focus, textarea:focus{box-shadow: 0 0 0 4px var(--ring)}
 .card-foot{display:flex; gap:8px; align-items:center; color:var(--muted); font-size:12px}
 .dot{opacity:.55}
 .footer{
-  margin:22px 0 10px;
-  padding:14px 0;
-  border-top:1px solid var(--border);
-  display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
+  margin: 32px auto 20px;
+  padding: 16px 20px;
+  max-width: var(--max);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,.06),
+    rgba(255,255,255,.03)
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow);
 }
 .toast{
   position:fixed; left:50%; bottom:18px; transform:translateX(-50%);
