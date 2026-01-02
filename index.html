@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gudang LinkHub</title>
+  <meta name="description" content="Pusat akses spreadsheet gudang dalam satu halaman."/>
+  <link rel="stylesheet" href="assets/app.css" />
+  <script defer src="assets/app.js"></script>
+  <script defer src="assets/render.js"></script>
+</head>
+<body>
+  <div class="bg-orbs"></div>
+  <div class="bg-grid"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">
+        <span class="mark-dot"></span>
+      </div>
+      <div class="brand-text">
+        <div class="title" id="siteTitle">Praktis Gudang LinkHub</div>
+        <div class="subtitle" id="siteSubtitle">Satu pintu untuk semua spreadsheet operasional gudang.</div>
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <button class="iconbtn" id="themeToggle" type="button" title="Dark/Light" aria-label="Toggle theme">
+        <span class="i">🌙</span>
+      </button>
+      <a class="btn ghost" id="repoBtn" href="#" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="kicker">
+          <span class="kbadge">INTERNAL</span>
+          <span class="ktext">Gudang • Spreadsheet Hub</span>
+        </div>
+
+        <h1>
+          Akses data gudang
+          <span class="accent">lebih cepat</span>
+          & rapi.
+        </h1>
+
+        <p class="lead">
+          Cari, filter per kategori, dan simpan link prioritas. Semua dikelola via <span class="mono">data/links.json</span>.
+        </p>
+
+        <div class="searchbar">
+          <div class="search">
+            <span class="search-ico">🔎</span>
+            <input id="q" type="search" placeholder="Cari: inbound, outbound, QC, packing, SLA..." autocomplete="off" />
+            <button class="iconbtn small" id="clearBtn" type="button" title="Reset" aria-label="Reset">✕</button>
+          </div>
+
+          <button class="btn primary" id="openAllBtn" type="button" title="Buka semua link yang tampil">
+            Buka yang tampil
+          </button>
+        </div>
+
+        <div class="chips" id="chips"></div>
+      </div>
+
+      <div class="hero-right">
+        <div class="panel">
+          <div class="panel-head">
+            <div class="panel-title">Ringkasan</div>
+            <div class="panel-pill" id="statUpdated">-</div>
+          </div>
+
+          <div class="panel-grid">
+            <div class="metric">
+              <div class="metric-num" id="statLinks">0</div>
+              <div class="metric-label">Link tampil</div>
+            </div>
+            <div class="metric">
+              <div class="metric-num" id="statCats">0</div>
+              <div class="metric-label">Kategori</div>
+            </div>
+          </div>
+
+          <div class="panel-note muted">
+            Tips: tandai link prioritas dengan <span class="pill mini">Wajib</span>/<span class="pill mini">Prioritas</span> atau <span class="mono">"pinned": true</span>.
+          </div>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-ico">⚡</div>
+          <div>
+            <div class="mini-title">Cepat</div>
+            <div class="muted small">Search + filter langsung.</div>
+          </div>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-ico">🔐</div>
+          <div>
+            <div class="mini-title">Kontrol</div>
+            <div class="muted small">Edit link via GitHub.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured" id="featured" style="display:none">
+      <div class="section-head">
+        <h2>Prioritas</h2>
+        <div class="muted small">Link yang ditandai <span class="pill mini">Wajib</span> / <span class="pill mini">Prioritas</span></div>
+      </div>
+      <div class="grid" id="featuredGrid"></div>
+    </section>
+
+    <div id="content"></div>
+
+    <footer class="footer">
+      <div class="foot-left">
+        <div class="foot-title"><span id="brandName">Praktis</span> • LinkHub</div>
+        <div class="muted small">© <span id="year"></span> • Terakhir update: <span id="footUpdated">-</span></div>
+      </div>
+
+      <div class="foot-right muted small">
+        Edit link: <span class="mono">data/links.json</span>
+      </div>
+    </footer>
+  </main>
+
+  <button class="fab" id="toTop" title="Ke atas" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
