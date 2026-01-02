@@ -279,4 +279,30 @@ textarea{resize:vertical}
   opacity:.6;
 }
 
+/* === FOOTER FIX (force override) === */
+.container{ padding-bottom: 80px !important; }
+
+.footer{
+  margin: 32px auto 20px !important;
+  padding: 16px 20px !important;
+  max-width: var(--max) !important;
+
+  border: 1px solid var(--border) !important;
+  border-radius: 18px !important;
+
+  background: linear-gradient(180deg, var(--card2), var(--card)) !important;
+  box-shadow: var(--shadow) !important;
+
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+
+@media (max-width: 640px){
+  .footer{
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+}
 
