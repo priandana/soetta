@@ -266,4 +266,17 @@ textarea{resize:vertical}
     text-align: center;
   }
 }
+.footer::before{
+  content:"";
+  position:absolute;
+  top:-16px;
+  left:50%;
+  transform:translateX(-50%);
+  width:120px;
+  height:3px;
+  border-radius:999px;
+  background: linear-gradient(90deg, var(--accent2), var(--accent));
+  opacity:.6;
+}
+
 
