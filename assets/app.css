@@ -260,3 +260,10 @@ textarea{resize:vertical}
   .tr{grid-template-columns: 1fr; gap:8px}
   .actions{justify-content:flex-start}
 }
+@media (max-width: 640px){
+  .footer{
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
